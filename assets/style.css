@@ -1,25 +1,127 @@
+:root{
+    --first-color: orange;
+    --second-color: violet;
+    --third-color: blue;
+}
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-
+body {
+    color:brown;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
 
 
 
 /* "header/ navigation" */
 
+header {
+    padding: 20px 35px;
+    background-color: seagreen;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+}
 
+header h1 {
+    font-weight: bold;
+     margin: 0;
+    font-size: 36px;
+    color: navy;
+}
 
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul{
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    color:cyan;
+    padding: 10px 15px;
+    font-weight: bolder;
+    font-size: 2vw;
+}
+
+header nav ul li a:hover {
+    background: var(--second-color);
+    color: var(--first-color);
+    border-radius: 15px;
+    text-shadow: none;
+  }
 /* "hero" */
-
+.hero {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+  }
 
 
 /* "about me" section */
+.about-section{
+    display:flex;
+    flex-wrap: wrap;
+}
 
+.me {
+    font-size: 48px;
+    border-bottom: 3px solid;
+    color: var(--second-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+  }
 
+  .marker {
+    font-size: 48px;
+    border-right: 3px solid;
+    color: var(--second-color);
+    padding-bottom: 20px;
+    text-align: left;
+    margin: 0 auto 35px auto;
+    width: 50%;
+    text-align: left;
+  }
 
 /* "work" section */
+.projects {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
+  .worx {
+    margin: 20px;
+    flex: 1;
+  }
 
-
+.worx img {
+   width: 100%;
+}
 /* "contact" section */
 
 
