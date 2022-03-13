@@ -2,7 +2,6 @@
     --first-color: rgb(2, 2, 2);
     --second-color: black;
     --third-color:rgb(177, 177, 38);
-    --fourth-color: rgb(9, 70, 9);
 }
 
 * {
@@ -17,13 +16,13 @@ body {
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin: 7em;
 }
+
 body, html {
     height: 100%;
   }
  
-
 header {
-    padding: 20px 35px;
+    padding: 3% 5%;
     background-attachment: fixed;
     display: flex;
     justify-content: space-between;
@@ -33,9 +32,9 @@ header {
     top: 0;
     background-color: antiquewhite;
     background-size: cover;
-    background-attachment: fixed;
     background-position: 80%;
-    border-radius: 20px;
+    border-radius: 0%;
+    border-width: 100%;
     text-decoration: none;
 }
 
@@ -48,7 +47,7 @@ header h1 {
 }
 
 header nav {
-    margin: 7px 0;
+    margin: .75%;
 }
 
 header nav ul {
@@ -75,17 +74,6 @@ header nav ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
   }
-/* "hero" */
-.hero {
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
-  }
-
 
 /* "about me" section */
 .about-section{
@@ -93,6 +81,20 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     border-radius: 20px;
 }
+
+ .marker {
+    font-size: 48px;
+    border-right: 3px solid;
+    padding-bottom: 20px;
+    text-align: center justify;
+    margin: 0 auto 35px auto;
+    width: 50%;
+    text-align: left;
+    border:thick;
+    border-style: ridge;
+    border: 15px;
+    border-color:var(--first-color);
+  }
 
 .me {
     font-size: 48px;
@@ -117,20 +119,6 @@ header nav ul li a:hover {
     
   }
 
-  .marker {
-    font-size: 48px;
-    border-right: 3px solid;
-    padding-bottom: 20px;
-    text-align: center justify;
-    margin: 0 auto 35px auto;
-    width: 50%;
-    text-align: left;
-    border:thick;
-    border-style: ridge;
-    border: 15px;
-    border-color:black;
-  }
-
 /* "work" section */
 
 .run {
@@ -139,6 +127,7 @@ header nav ul li a:hover {
     font-weight: bold;
     color:darkblue;
 }
+
 .projects a:hover{
     width: 100%;
     margin: 0 auto;
@@ -150,15 +139,14 @@ header nav ul li a:hover {
   .worx {
     border-style: groove;
     border-width: 1.27em;
+    border-radius: 20%;
     padding:3em;
-    border-radius: 10px;
     margin: 10px;
     display:flex;
     flex: auto;
     flex-direction: column;
     flex-shrink:inherit;
     background:rgb(157, 156, 156);
-    image-rendering: auto;
     color: var(--first-color);
     content: center;
     text-align: center;
@@ -175,13 +163,22 @@ header nav ul li a:hover {
     width: 50%;
   }
 
+  .worx h3 {
+    font-size: 28px;
+  }
+  
+  .worx h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: auto;
+  }
+
   .worxone {
     width: 100%;
-    padding: 15px 15px;
-    border-radius: 20px;
+    padding: 2%;
+    border-radius: 20%;
     border-style: groove;
     border-width: 1.27em;
-    margin: 20px;
     flex: auto;
     background:rgb(157, 156, 156);
     color: var(--first-color);
@@ -199,31 +196,16 @@ header nav ul li a:hover {
 
   }
 
-  .worx h3 {
-    font-size: 28px;
-  }
-  
-  .worx h4 {
-    font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-
-/* "contact" section */
+/* footer "contact" section */
 .ids li {
     text-align:justify;
     text-decoration: none;
     justify-content:space-between;
-    padding: 15px 15px;
+    padding: 2%;
     font-weight: lighter;
     font-size: 1.25vw;
     display: inline;
 }
-
-
-/* "footer" */
-
-
 
 /* "utilities" */
 .flex-row {
