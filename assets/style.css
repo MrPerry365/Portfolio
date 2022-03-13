@@ -1,7 +1,8 @@
 :root{
-    --first-color: orange;
-    --second-color: violet;
-    --third-color: blue;
+    --first-color: rgb(2, 2, 2);
+    --second-color: black;
+    --third-color:rgb(177, 177, 38);
+    --fourth-color: rgb(9, 70, 9);
 }
 
 * {
@@ -11,40 +12,46 @@
 }
 
 body {
+    background-color: beige;
     color:brown;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 7em;
 }
-
-
-
-/* "header/ navigation" */
+body, html {
+    height: 100%;
+  }
+ 
 
 header {
     padding: 20px 35px;
-    background-color: seagreen;
+    background-attachment: fixed;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    background-color: antiquewhite;
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
+    border-radius: 20px;
+    text-decoration: none;
 }
 
 header h1 {
     font-weight: bold;
-     margin: 0;
+    margin: 0;
     font-size: 36px;
-    color: navy;
+    color: rgb(128, 109, 0);
+    text-decoration: none;
 }
 
 header nav {
     margin: 7px 0;
 }
 
-header nav ul{
+header nav ul {
     text-align: right;
     display: flex;
     flex-wrap: wrap;
@@ -54,15 +61,17 @@ header nav ul{
 }
 
 header nav ul li a {
-    color:cyan;
+    color:darkblue;
     padding: 10px 15px;
     font-weight: bolder;
     font-size: 2vw;
+    font-style: normal;
+    text-decoration: none;
 }
 
 header nav ul li a:hover {
     background: var(--second-color);
-    color: var(--first-color);
+    color: var(--third-color);
     border-radius: 15px;
     text-shadow: none;
   }
@@ -82,6 +91,7 @@ header nav ul li a:hover {
 .about-section{
     display:flex;
     flex-wrap: wrap;
+    border-radius: 20px;
 }
 
 .me {
@@ -92,38 +102,130 @@ header nav ul li a:hover {
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
+
+  }
+
+  .me img {
+    display:flex;
+    border: none;
+    margin-left: 50px;
+    padding: none;
+    max-width: 150px;
+    height: 800px;
+    width: 120%;
+    content:center;
+    
   }
 
   .marker {
     font-size: 48px;
     border-right: 3px solid;
-    color: var(--second-color);
     padding-bottom: 20px;
-    text-align: left;
+    text-align: center justify;
     margin: 0 auto 35px auto;
     width: 50%;
     text-align: left;
+    border:thick;
+    border-style: ridge;
+    border: 15px;
+    border-color:black;
   }
 
 /* "work" section */
-.projects {
+
+.run {
+    text-align:center;
+    font-size: larger;
+    font-weight: bold;
+    color:darkblue;
+}
+.projects a:hover{
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-
+  
   .worx {
-    margin: 20px;
-    flex: 1;
+    border-style: groove;
+    border-width: 1.27em;
+    padding:3em;
+    border-radius: 10px;
+    margin: 10px;
+    display:flex;
+    flex: auto;
+    flex-direction: column;
+    flex-shrink:inherit;
+    background:rgb(157, 156, 156);
+    image-rendering: auto;
+    color: var(--first-color);
+    content: center;
+    text-align: center;
+    text-justify: auto;
+    width:70%;
+  }
+  
+  .worx img {
+    font-size: 48px;
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
   }
 
-.worx img {
-   width: 100%;
-}
-/* "contact" section */
+  .worxone {
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 20px;
+    border-style: groove;
+    border-width: 1.27em;
+    margin: 20px;
+    flex: auto;
+    background:rgb(157, 156, 156);
+    color: var(--first-color);
+    content: center;
+    text-align:center;
+    font-size: 25px;
+    text-justify: auto;
+    font-weight: 800;
+  }
 
+  .worxone img {
+      width:50%;
+      flex-shrink: inherit;
+      padding: auto;
+
+  }
+
+  .worx h3 {
+    font-size: 28px;
+  }
+  
+  .worx h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+/* "contact" section */
+.ids li {
+    text-align:justify;
+    text-decoration: none;
+    justify-content:space-between;
+    padding: 15px 15px;
+    font-weight: lighter;
+    font-size: 1.25vw;
+    display: inline;
+}
 
 
 /* "footer" */
+
+
+
+/* "utilities" */
+.flex-row {
+    display: flex;
+  }
