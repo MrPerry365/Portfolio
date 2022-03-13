@@ -2,6 +2,7 @@
     --first-color: rgb(2, 2, 2);
     --second-color: black;
     --third-color:rgb(177, 177, 38);
+    --fourth-color: rgb(157, 156, 156);
 }
 
 * {
@@ -146,7 +147,7 @@ header nav ul li a:hover {
     flex: auto;
     flex-direction: column;
     flex-shrink:inherit;
-    background:rgb(157, 156, 156);
+    background:var(--fourth-color);
     color: var(--first-color);
     content: center;
     text-align: center;
@@ -180,7 +181,7 @@ header nav ul li a:hover {
     border-style: groove;
     border-width: 1.27em;
     flex: auto;
-    background:rgb(157, 156, 156);
+    background: var(--fourth-color);
     color: var(--first-color);
     content: center;
     text-align:center;
